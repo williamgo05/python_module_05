@@ -14,26 +14,26 @@ print("Configuration loaded:")
 
 print(f"Mode: {mode}")
 if mode == "development":
-	print("Development: detailed diagnostics enabled!")
+    print("Development: detailed diagnostics enabled!")
 elif mode == "production":
-	print("Production: restricted diagnostics enabled!")
+    print("Production: restricted diagnostics enabled!")
 
 if not database:
-	print("DATABASE_URL is missing")
+    print("DATABASE_URL is missing")
 else:
-	print(f"Database: Connected to local instance")
+    print("Database: Connected to local instance")
 
 if not api_key:
-	print("API_KEY is missing")
+    print("API_KEY is missing")
 else:
-	print(f"API Access: Authenticated")
+    print("API Access: Authenticated")
 
 if not log_level:
-	print("LOG_LEVEL is missing")
+    print("LOG_LEVEL is missing")
 else:
-	print(f"Log Level: {log_level}")
+    print(f"Log Level: {log_level}")
 
 if not endpoint:
-	print("ZION_ENDPOINT is missing")
+    print("ZION_ENDPOINT is missing")
 else:
-	print(f"Remote Network: Online")
+    print("Remote Network: Online")
